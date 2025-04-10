@@ -8,7 +8,7 @@
       Endpoint should take two optional parameters – business_id and diagnostic
       Endpoint should return: Business ID, Business Name, Symptom Code, Symptom Name, and Symptom Diagnostic values based on filter
 
-
+Note: SQLite was used for simplicity and quick local setup; PostgreSQL was not required for this challenge implementation.
 
 # AdviNow Interview Challenge
 This repository will be used as a test case for interview candidates. The application structure is predefined using FastAPI and uvicorn in the "app" directory in the "run.py" module. 

@@ -1,9 +1,9 @@
 # Completed Tasks (in order of completion)
-1. Created a virtual environment and install the requirements – requirements/requirements.txt
+1. Created a virtual environment and installed the requirements – requirements/requirements.txt
 2. Designed a database mock-up based on the provided data – app/data/business_symptom_data.csv
 3. Created data model – example with SQLAlchemy in app/models.py
 4. Created an endpoint for importing a CSV file into the database
-5. Generated migration script and run migration to create database tables – using Alembic
+5. Generated migration script and ran migration to create database tables – using Alembic
 6. Created an endpoint that returns business and symptom data
       Endpoint should take two optional parameters – business_id and diagnostic
       Endpoint should return: Business ID, Business Name, Symptom Code, Symptom Name, and Symptom Diagnostic values based on filter

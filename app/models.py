@@ -1,16 +1,12 @@
-from sqlalchemy import Column, Integer, String, DateTime
-from sqlalchemy.ext.declarative import declarative_base
-import datetime
+from sqlalchemy import Column, Integer, String
+from app.database import Base
 
-Base = declarative_base()
+class BusinessSymptom(Base):
+    __tablename__ = "business_symptoms"
 
-
-class Example(Base):
-    __tablename__ = "business"
-
-    id = Column(Integer, primary_key=True, autoincrement=True, unique=True)
-    example_column = Column(String(100), nullable=False)
-    created_at = Column(DateTime(timezone=True), nullable=False, default=datetime.datetime.utcnow)
-    updated_at = Column(DateTime(timezone=True), nullable=False, default=datetime.datetime.utcnow)
-    created_by = Column(String(100), nullable=True)
-    updated_by = Column(String(100), nullable=True)
+    id = Column(Integer, primary_key=True, index=True)
+    business_id = Column(String)
+    business_name = Column(String)
+    symptom_code = Column(String)
+    symptom_name = Column(String)
+    diagnostic = Column(String)
